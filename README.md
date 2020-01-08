@@ -31,7 +31,7 @@ https://www.az-delivery.de/products/mp3-player-modul?_pos=2&_sid=30d4586b1&_ss=r
 
 In the loop() function we are waiting for a letter to be sent from the Serial Monitor. If you send one of the letters from the loop() function, a specific function will be executed. 
 
-When you send several commands to the DFPlayer Mini module, the output in the Serial Monitor should look like the output on the following image:
+When you send commands to the DFPlayer Mini module, the output in the Serial Monitor should look like the output on the following image:
 
 ![alt](https://github.com/Slaveche90/DFPlayer_Custom_Sketch/blob/master/SerialOutput.png?raw=true)
 
