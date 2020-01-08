@@ -10,4 +10,4 @@ Example sketch for sending commands to the DFPlayer Mini usning Uno without usin
 The sketch is tested with the DFPlayer mini module 
 https://www.az-delivery.de/products/mp3-player-modul?_pos=2&_sid=30d4586b1&_ss=r
 
-![alt](https://github.com/Slaveche90/DFPlayer_Custom_Sketch/blob/master/SerialOutput.jpg?raw=true)
+![alt](https://github.com/Slaveche90/DFPlayer_Custom_Sketch/blob/master/SerialOutput.png?raw=true)
