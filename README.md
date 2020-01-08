@@ -1,16 +1,7 @@
 # DFPlayer custom sketch
 Example sketch for sending commands to the DFPlayer Mini usning Uno without using external libraries. 
 
-# Connection diagram  
-
-![alt](https://github.com/Slaveche90/DFPlayer_Custom_Sketch/blob/master/ConnectionDiagram.png?raw=true)
-
-# How to use the sketch
-
-The sketch is tested with the DFPlayer mini module 
-https://www.az-delivery.de/products/mp3-player-modul?_pos=2&_sid=30d4586b1&_ss=r
-
-We used acknowledge byte equal to 0x01 to get the reponse from the module  
+# Sending commands to the DFPlayer Mini
 
 To send a command to the module, follow specific format:  
 **$SB VB LB CMD ACK DATA1 DATA2 CHKS1 CHKS2 $EB**    
@@ -26,6 +17,20 @@ DATA2 - 0xxx - Data low byte
 CHKS1 - 0xxx - Checksum high byte  
 CHKS2 - 0xxx - Checksum low byte  
 $EB - 0xEF - End byte  
+
+We used acknowledge byte equal to 0x01 to get the reponse from the module   
+
+# Connection diagram  
+
+![alt](https://github.com/Slaveche90/DFPlayer_Custom_Sketch/blob/master/ConnectionDiagram.png?raw=true)
+
+# How to use the sketch
+
+The sketch is tested with the DFPlayer mini module 
+https://www.az-delivery.de/products/mp3-player-modul?_pos=2&_sid=30d4586b1&_ss=r
+
+
+
 
 In the loop() function we are waiting for a letter to be sent from the Serial Monitor. If you send one of the letters from the loop() function, a specific function will be executed. 
 
