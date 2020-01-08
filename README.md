@@ -29,9 +29,6 @@ We used acknowledge byte equal to 0x01 to get the reponse from the module
 The sketch is tested with the DFPlayer mini module 
 https://www.az-delivery.de/products/mp3-player-modul?_pos=2&_sid=30d4586b1&_ss=r
 
-
-
-
 In the loop() function we are waiting for a letter to be sent from the Serial Monitor. If you send one of the letters from the loop() function, a specific function will be executed. 
 
 When you send several commands to the DFPlayer Mini module, the output in the Serial Monitor should look like the output on the following image:
