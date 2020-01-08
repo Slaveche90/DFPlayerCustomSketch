@@ -14,17 +14,17 @@ We used acknowledge byte equal to 0x01 to get the reponse from the module
 
 To send a command to the module, follow specific format:  
 $SB VB LB CMD ACK DATA1 DATA2 CHKS1 CHKS2 $EB  
-Mark - Byte - Byte description  
-$SB - 0x7E - Start byte  
-VB - 0xFF - Version byte  
-LB - 0xxx - The number of bytes of the command without start and end   bytes (In our case 0x06)  
-CMD - 0xxx - Such as PLAY and PAUSE and so on  
-ACK - 0xxx - Acknowledge byte 0x00 = not ack, 0x01 = ack  
-DATA1 - 0xxx - Data high byte  
-DATA2 - 0xxx - Data low byte  
-CHKS1 - 0xxx - Checksum high byte  
-CHKS2 - 0xxx - Checksum low byte  
-$EB - 0xEF - End byte  
+Mark&nbsp;&nbsp;&nbsp;- Byte - Byte description  
+$SB&nbsp;&nbsp;&nbsp;- 0x7E - Start byte  
+VB&nbsp;&nbsp;&nbsp;- 0xFF - Version byte  
+LB&nbsp;&nbsp;&nbsp;- 0xxx - The number of bytes of the command without start and end   bytes (In our case 0x06)  
+CMD&nbsp;&nbsp;&nbsp;- 0xxx - Such as PLAY and PAUSE and so on  
+ACK&nbsp;&nbsp;&nbsp;- 0xxx - Acknowledge byte 0x00 = not ack, 0x01 = ack  
+DATA1&nbsp;&nbsp;&nbsp;- 0xxx - Data high byte  
+DATA2&nbsp;&nbsp;&nbsp;- 0xxx - Data low byte  
+CHKS1&nbsp;&nbsp;&nbsp;- 0xxx - Checksum high byte  
+CHKS2&nbsp;&nbsp;&nbsp;- 0xxx - Checksum low byte  
+$EB&nbsp;&nbsp;&nbsp;- 0xEF - End byte  
 
 In the loop() function we are waiting for a letter to be sent from the Serial Monitor. If you send one of the letters from the loop() function, a specific function will be executed. 
 
