@@ -22,11 +22,11 @@ We used acknowledge byte equal to 0x01 to get the reponse from the module
 
 # Connection diagram  
 
-![alt](https://github.com/Slaveche90/DFPlayer_Custom_Sketch/blob/master/ConnectionDiagram.png?raw=true)
+![alt](https://github.com/Slaveche90/DFPlayer_Custom_Sketch/blob/master/ConnectionDiagram.png?raw=true)  
 
 # How to use the sketch
 
-The sketch is tested with the DFPlayer mini module 
+The sketch is tested with the DFPlayer mini module:   
 https://www.az-delivery.de/products/mp3-player-modul?_pos=2&_sid=30d4586b1&_ss=r
 
 In the loop() function we are waiting for a letter to be sent from the Serial Monitor. If you send one of the letters from the loop() function, a specific function will be executed. 
@@ -35,4 +35,5 @@ When you send commands to the DFPlayer Mini module, the output in the Serial Mon
 
 ![alt](https://github.com/Slaveche90/DFPlayer_Custom_Sketch/blob/master/SerialOutput.png?raw=true)
 
-We implemented the most usefull functions for DFPlayer Mini module, but not all of them. You can read about module and exmplanation for parts of the sketch in the eBook:
+We implemented the most usefull functions for DFPlayer Mini module, but not all of them. You can read about module and exmplanation for parts of the sketch in the eBook:  
+https://delivery.shopifyapps.com/-/aa9ba10c171b304a/8dec0c102d9f572a
